@@ -557,6 +557,7 @@ void AMQPQueue::sendConsumeCommand() {
 			if (res) break;
 		}
 	}
+    pmessage = NULL;
 }
 
 void AMQPQueue::setHeaders(amqp_basic_properties_t * p) {
